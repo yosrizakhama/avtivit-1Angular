@@ -1,0 +1,16 @@
+#loveIt{
+    position: absolute;
+    width: auto;
+    
+    left: 10px;
+}
+#NotloveIt{
+    float: left;
+    margin-left: 70px;
+}
+
+.maclass
+{
+    background-color:#ffffff ;
+    color: black;
+}

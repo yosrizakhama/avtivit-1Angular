@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+  <h1 style="text-align:left">
+    Post
+  </h1>
+  <app-post-list-component style="display: none"></app-post-list-component>
+  <ul class=list-group>
+    
+     <app-post-list-component  *ngFor="let post of mesPost"
+[subTitle]="post.title"
+[content]="post.content"
+[date]="post.created_at"
+style="margin: 10px 10px"></app-post-list-component> 
+  <br><br>
+     
+</ul>
+
+
+
+<router-outlet></router-outlet>

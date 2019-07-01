@@ -1,0 +1,16 @@
+
+<li [ngClass]="{'maclass':isPositive()===undefined,'list-group-item-danger':!isPositive(),'list-group-item-success':isPositive()
+}" style="margin: 10px 10px"
+
+
+>
+    <h1  class="text-success text-left">titre :{{subTitle||async}}<span style="display: block;float: right;text-align:left;font-size:small">{{date|date:'short'}}</span> </h1>
+
+    <div id="content" style="font-size: medium" >{{content}}<br>
+            
+        <button id="loveIt" class="btn btn-success " (click)=addLoveIt()>LoveIt!</button>
+        <button id="NotloveIt" class="btn btn-danger" (click)=reduiceLoveIt()>Don't LoveIt!</button>
+            <br><br>
+    </div>
+
+</li>
